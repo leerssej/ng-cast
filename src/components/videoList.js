@@ -6,6 +6,6 @@ angular.module('video-player')
     templateUrl: 'src/templates/videoList.html',
     
     controller: function() {
-      this.data = window.exampleVideoData;
+      this.videos = window.exampleVideoData;
     }
   });
