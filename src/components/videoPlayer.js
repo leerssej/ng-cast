@@ -7,8 +7,7 @@ angular.module('video-player')
     templateUrl: 'src/templates/videoPlayer.html',
     
     controller: function($scope) {
-      console.log($scope);
-      this.video = window.exampleVideoData[0];
+      //this.video = window.exampleVideoData[0];
       // this.videoId = `https://www.youtube.com/embed/${this.video.id.videoId}`;
     }
   });
