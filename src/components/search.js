@@ -2,11 +2,11 @@ angular.module('video-player')
   .component('search', {
     templateUrl: 'src/templates/search.html',
     bindings: {
-      onClick: '<'
+      result: '<'
     },
     
     controller: function() {
-      this.newSearch = '';
+      this.search = '';
     }
   
   });

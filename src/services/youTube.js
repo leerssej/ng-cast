@@ -1,6 +1,6 @@
 angular.module('video-player')
   .service('youTube', function($http) {
-    this.searchYouTube = function(q, cb) {
+    this.search = function(q, cb) {
       var params = {
         part: 'snippet',
         key: window.YOUTUBE_API_KEY,
