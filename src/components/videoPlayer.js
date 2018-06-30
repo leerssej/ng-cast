@@ -1,5 +1,14 @@
 angular.module('video-player')
-
-.component('videoPlayer', {
-  // TODO
-});
+  .component('videoPlayer', {
+    bindings: {
+      video: '<'
+    },
+    
+    templateUrl: 'src/templates/videoPlayer.html',
+    
+    controller: function($scope) {
+      console.log($scope);
+      this.video = window.exampleVideoData[0];
+      // this.videoId = `https://www.youtube.com/embed/${this.video.id.videoId}`;
+    }
+  });

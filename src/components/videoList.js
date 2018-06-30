@@ -3,9 +3,13 @@ angular.module('video-player')
   //    $scope.data = window.exampleVideoData;
   // });
   .component('videoList', {
+    bindings: {
+      videos: '<'
+    },
+    
     templateUrl: 'src/templates/videoList.html',
     
-    controller: function() {
-      this.videos = window.exampleVideoData;
+    controller: function($scope) {
+     
     }
   });
