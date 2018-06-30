@@ -1,6 +1,6 @@
 angular.module('video-player')//.service('youTube', youTube)
   
-  .controller('myController', ['youTube', '$http', function(youTube) {
+  .controller('myController', ['youTube', function(youTube) {
     this.videos = window.exampleVideoData;
     this.currentVideo = window.exampleVideoData[0];
       
@@ -8,8 +8,8 @@ angular.module('video-player')//.service('youTube', youTube)
       this.currentVideo = video;
     };
       
-    youTube();
-    //this.search = q => youTube(q);
+    //youTube();
+    this.search = q => youTube.searchYouTube(q, console.log());
   }])
 
   .component('app', {   
