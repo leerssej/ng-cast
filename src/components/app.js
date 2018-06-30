@@ -9,7 +9,11 @@ angular.module('video-player')//.service('youTube', youTube)
     };
       
     //youTube();
-    this.search = q => youTube.searchYouTube(q, console.log());
+    this.search = q => youTube.searchYouTube(q, (data) => {
+      // console.log(this.videos);
+      this.videos = data;
+      this.currentVideo = data[0];
+    });
   }])
 
   .component('app', {   

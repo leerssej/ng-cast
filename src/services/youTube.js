@@ -14,7 +14,7 @@ angular.module('video-player')
         url: 'https://www.googleapis.com/youtube/v3/search',
         params: params
       }).then(function(data) {
-        console.log(data);
+        cb(data.data.items);
       }, function(error) {
         console.log(error);
       });
